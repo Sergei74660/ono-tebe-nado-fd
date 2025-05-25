@@ -129,19 +129,7 @@ body{
 
 
     .lots {
-        /* width: 1052px; */
-        /* height: 723px; */
-        /* top: 1230px; */
-        /* font-family: 'Raleway', sans-serif; */
-        /* font-weight: 700; */
-        /* font-size: 40px; */
-        /* line-height: 47px; */
-        /* letter-spacing: 0; */
-        /* text-align: left; */
-        /* position: absolute; Добавлено, чтобы `.f-1` позиционировался относительно body */
-        /* display: grid; Сделали .lots гридом */
-        /* gri.d-template-columns: repeat(3, 1fr); Разделили на 3 столбца */
-        /* gap: 20px; Добавили отступы между элементами */
+       
         .f-1 {
             font-weight: 700;
             font-size: 40px;
@@ -153,13 +141,10 @@ body{
     }
     .all_lots{
         display: grid;
-        /* height: 293px; */
+       
         grid-template-columns: 334px 334px 334px;
         align-items: center;
         justify-content: space-between;
-        /* margin-bottom: 30px;
-        margin-right: 24px;
-        margin-left: 24px; */
         margin: 0 24px 155px 24px;
     }
 
@@ -189,8 +174,7 @@ body{
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        /* top: 150px; Измените это значение, чтобы разместить ниже "ЛОТЫ" */
-        /* left: 0; */
+        
     }
     .frame:before {
         content: '';
@@ -208,15 +192,12 @@ body{
     }
     .title {
         color: #fff;
-        /* font-family: 'Raleway', sans-serif; */
         font-weight: 700;
         font-size: 22px;
         text-transform: uppercase;
         position: relative;
         z-index: 2;
-        /* line-height: 120%; */
-        /* letter-spacing: 0; */
-        /* text-align: left; */
+       
 
     }
     .description {
@@ -237,8 +218,6 @@ body{
     .about_auction{
         display: grid;
         grid-template-columns: 334px auto;
-        /* align-items: center; */
-        /* justify-content: space-between; */
         padding: 0 24px;
         margin-bottom: 180px;
         .bg-black{
@@ -266,7 +245,6 @@ body{
     }
     footer{
         display: grid;
-        /* height: 293px; */
         grid-template-columns: 400px 200px 400px;
         align-items: center;
         justify-content: space-between;
