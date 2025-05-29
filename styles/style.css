@@ -70,16 +70,19 @@ header address {
 }
 
 .cover .f-100:first-child {
+    letter-spacing: 0.3em;
     display: flex;
     justify-content: flex-start;
 }
 
 .cover .f-100:last-child {
+    letter-spacing: 0.3em;
     display: flex;
     justify-content: flex-end;
 }
 
 .cover .f-100:nth-child(2) {
+    letter-spacing: 0.3em;
     display: flex;
     justify-content: center;
 }
@@ -94,12 +97,13 @@ header address {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.621);
+    background-color: #000;
+    opacity: 0.6;
     z-index: 1;
 }
 
 .text_but {
-    padding: 50px;
+    padding: 0 50px 50px 50px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -109,11 +113,13 @@ header address {
 }
 
 .text_but .f-22-400 {
-    word-spacing: 25px;
     font-weight: 400;
     font-size: 22px;
+    line-height: 127%;
     text-transform: uppercase;
     color: #fff;
+    max-width: 637px;
+    word-spacing: 14px;
 }
 
 .text_but button {
@@ -121,7 +127,7 @@ header address {
     width: 100%;
     font-size: 22px;
     font-weight: 500;
-    padding: 12px 0;
+    padding: 12px 0 11px 0;
     color: #fff;
     border: 1px solid #fff;
     text-transform: uppercase;
@@ -183,7 +189,7 @@ header address {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.418);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
