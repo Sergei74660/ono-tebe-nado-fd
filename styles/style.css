@@ -1,48 +1,51 @@
 /* место для вашего кода */
-body{
-    header{
+
+    header {
         display: grid;
         height: 293px;
         grid-template-columns: 400px 200px 400px;
         align-items: center;
         justify-content: space-between;
-        padding: 0 50px 0 50px;
-        nav{
-            ul{
-                display: flex;
-                flex-direction: row;
-                
-                li{
-                    margin-right: 30px;
-                }
-                li:not(:first-child){
-                    list-style-type: circle;
-                }
-                li:first-child{
-                    list-style: none;
-                    a{
-                        text-decoration: none;
-                    }
-                } 
-            }
-        }
-        a{
-            margin: auto;
-            img{
-                max-width: 148px;
-                width: 100%;
-            }
-        }
-        address{
-            justify-self: end;
-            font-style: normal;
-        }
+        padding: 0 50px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    header nav ul li {
+        margin-right: 30px;
+    }
+
+    header nav ul li:not(:first-child) {
+        list-style-type: circle;
+    }
+
+    header nav ul li:first-child a {
+        text-decoration: none;
+    }
+
+    header a {
+        margin: auto;
+    }
+
+    header a img {
+        max-width: 148px;
+        width: 100%;
+    }
+
+    header address {
+        justify-self: end;
+        font-style: normal;
     }
 
 
-    
-    .main_block{
-        background-image: url("../images/cover.jpg"); 
+    .main_block {
+        background-image: url("../images/cover.jpg");
         background-size: auto 100%;
         height: 757px;
         max-width: 100%;
@@ -52,33 +55,35 @@ body{
         flex-direction: column;
         margin-bottom: 180px;
     }
-    .cover{
-        
+
+    .cover {
         padding: 165px 50px 106px 50px;
-        
-        .f-100{
-            color: #fff;
-            position: relative;
-            z-index: 2;
-            font-size: 100px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }    
-        .f-100:first-child{
-            display: flex;
-            justify-content: flex-start
-        }
-        .f-100:last-child{
-            display: flex;
-            justify-content: flex-end
-        }
-        :nth-child(2){
-            display:flex;
-            justify-content: center;
-        }   
     }
-    
-       
+
+    .cover .f-100 {
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .cover .f-100:first-child {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .cover .f-100:last-child {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cover .f-100:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+
     .cover:before {
         content: '';
         display: block;
@@ -89,56 +94,51 @@ body{
         left: 0;
         right: 0;
         bottom: 0;
-        background-color:rgba(0, 0, 0, 0.621);
+        background-color: rgba(0, 0, 0, 0.621);
         z-index: 1;
     }
 
-
-    .text_but{
+    .text_but {
         padding: 50px;
         display: flex;
         align-items: flex-end;
-        align-content: flex-end;
         justify-content: space-between;
-        align-items: center;
         height: 100%;
         position: relative;
         z-index: 2;
-        .f-22-400{
-            word-spacing: 25px;
-            font-weight: 400;
-            font-size: 22px;
-            text-transform: uppercase;
-            color: #fff;
-        }
-        button{
-            max-width: 256px;
-            width: 100%;
-            font-size: 22px;
-            font-weight: 500;
-            padding: 12px 0;
-            color: #fff;
-            border: 1px solid #fff;
-            text-transform: uppercase;
-            background: #ffffff00;
-
-        }
     }
-        
 
-
-
-    .lots {
-        .f-1 {
-            font-weight: 700;
-            font-size: 40px;
-            text-transform: uppercase;
-            color: #000;
-            margin-bottom: 27px;
-            margin-left: 64px;
-        }
+    .text_but .f-22-400 {
+        word-spacing: 25px;
+        font-weight: 400;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #fff;
     }
-    .all_lots{
+
+    .text_but button {
+        max-width: 256px;
+        width: 100%;
+        font-size: 22px;
+        font-weight: 500;
+        padding: 12px 0;
+        color: #fff;
+        border: 1px solid #fff;
+        text-transform: uppercase;
+        background: transparent;
+    }
+
+
+    .lots .f-1 {
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 27px;
+        margin-left: 64px;
+    }
+
+    .all_lots {
         display: grid;
         grid-template-columns: 334px 334px 334px;
         align-items: center;
@@ -146,24 +146,23 @@ body{
         margin: 0 24px 120px 24px;
     }
 
-
-    .frame-1{
+    .frame-1 {
         background-image: url("../images/card-lot-01.jpg");
         background-size: auto 100%;
-        background-position: -120px
+        background-position: -120px;
     }
-    .frame-2{
+
+    .frame-2 {
         background-image: url("../images/card-lot-02.jpg");
         background-size: auto 100%;
-        background-position: -120px
+        background-position: -120px;
     }
 
-    .frame-3{
+    .frame-3 {
         background-image: url("../images/card-lot-03.jpg");
         background-size: auto 100%;
-        background-position: -120px
+        background-position: -120px;
     }
-
 
     .frame {
         height: 596px;
@@ -173,6 +172,7 @@ body{
         justify-content: space-between;
         position: relative;
     }
+
     .frame:before {
         content: '';
         display: block;
@@ -183,10 +183,10 @@ body{
         left: 0;
         right: 0;
         bottom: 0;
-        background-color:rgba(0, 0, 0, 0.418);
+        background-color: rgba(0, 0, 0, 0.418);
         z-index: 1;
-    
     }
+
     .title {
         color: #fff;
         font-weight: 700;
@@ -195,6 +195,7 @@ body{
         position: relative;
         z-index: 2;
     }
+
     .description {
         color: rgb(255, 255, 255);
         font-weight: 400;
@@ -203,91 +204,97 @@ body{
         z-index: 2;
     }
 
-    .watch_more{
+    .watch_more {
         font-weight: 400;
         font-size: 20px;
         margin-top: 30px;
         margin-left: 64px;
     }
 
-    .about_auction{
+
+    .about_auction {
         display: grid;
         grid-template-columns: 334px auto;
-        
-        padding: 35px 24px 0 24px ;
+        padding: 35px 24px 0;
         margin-bottom: 180px;
-        .bg-black{
-            background: #000;
-            padding: 40px;
-            border-radius: 50%;
-            margin-left: auto;
-            margin-right: auto;
-            width: 240px;
-            height: 240px;
-        }
-        .bg-img{
-            width: 100%;
-            height: 100%;
-            margin: auto;
-        }
-        .content_auction{
-            padding-top: 100px;
-            
-            .text_about_auction {
-                font-size: 20px;
-                margin-left: 24px;
-            }
-
-            .title_about_auction {
-                font-weight: 700;
-                font-size: 40px;
-                text-transform: uppercase;
-                color: #000;
-                margin: 0 0 90px 24px;
-            }
-        }
-        
     }
-    footer{
+
+    .about_auction .bg-black {
+        background: #000;
+        padding: 40px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 240px;
+        height: 240px;
+    }
+
+    .about_auction .bg-img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .about_auction .content_auction {
+        padding-top: 100px;
+    }
+
+    .about_auction .content_auction .text_about_auction {
+        font-size: 20px;
+        margin-left: 24px;
+    }
+
+    .about_auction .content_auction .title_about_auction {
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #000;
+        margin: 0 0 90px 24px;
+    }
+
+
+    footer {
         display: grid;
         grid-template-columns: 400px 200px 400px;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 82px;
-        address{
-            a{
-                font-style: normal;
-            }
-            p{
-                font-style: normal;
-            }
-        }
-        nav{
-            ul{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                li{
-                    list-style: none;
-                    
-                }
-                li:first-child{
-                    list-style: none;
-                    a{
-                        text-decoration: none;
-                    }
-                }    
-            }
-        }
-        .social{
-            display: flex;
-            justify-self: end;
-            margin-right: 24px;
-            img{
-                width: 48px;
-                height: 48px;
-                margin-left: 48px;
-            }
-        }
     }
-}
+
+    footer address a {
+        font-style: normal;
+    }
+
+    footer address p {
+        font-style: normal;
+        margin: 0;
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer nav ul li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+    footer nav ul li:first-child a {
+        text-decoration: none;
+    }
+
+    footer .social {
+        display: flex;
+        justify-self: end;
+        margin-right: 24px;
+    }
+
+    footer .social img {
+        width: 48px;
+        height: 48px;
+        margin-left: 48px;
+    }
