@@ -1,39 +1,39 @@
 /* место для вашего кода */
-body {
-    header {
+body{
+    header{
         display: grid;
         height: 293px;
         grid-template-columns: 400px 200px 400px;
         align-items: center;
         justify-content: space-between;
         padding: 0 50px 0 50px;
-        nav {
-            ul {
+        nav{
+            ul{
                 display: flex;
                 flex-direction: row;
                 
-                li {
+                li{
                     margin-right: 30px;
                 }
-                li:not(:first-child) {
+                li:not(:first-child){
                     list-style-type: circle;
                 }
-                li:first-child {
+                li:first-child{
                     list-style: none;
-                    a {
+                    a{
                         text-decoration: none;
                     }
                 } 
             }
         }
-        a {
+        a{
             margin: auto;
-            img {
+            img{
                 max-width: 148px;
                 width: 100%;
             }
         }
-        address {
+        address{
             justify-self: end;
             font-style: normal;
         }
@@ -41,8 +41,7 @@ body {
 
 
     
-    .main_block {
-        
+    .main_block{
         background-image: url("../images/cover.jpg"); 
         background-size: auto 100%;
         height: 757px;
@@ -53,12 +52,11 @@ body {
         flex-direction: column;
         margin-bottom: 180px;
     }
-
-    .cover {
+    .cover{
         
         padding: 165px 50px 106px 50px;
         
-        .f-100 {
+        .f-100{
             color: #fff;
             position: relative;
             z-index: 2;
@@ -66,15 +64,15 @@ body {
             text-transform: uppercase;
             font-weight: 700;
         }    
-        .f-100:first-child {
+        .f-100:first-child{
             display: flex;
             justify-content: flex-start
         }
-        .f-100:last-child {
+        .f-100:last-child{
             display: flex;
             justify-content: flex-end
         }
-        :nth-child(2) {
+        :nth-child(2){
             display:flex;
             justify-content: center;
         }   
@@ -96,24 +94,24 @@ body {
     }
 
 
-    .text_but {
+    .text_but{
         padding: 50px;
         display: flex;
-        align-items: flex-end center;
+        align-items: flex-end;
         align-content: flex-end;
         justify-content: space-between;
-        
+        align-items: center;
         height: 100%;
         position: relative;
         z-index: 2;
-        .f-22-400 {
+        .f-22-400{
             word-spacing: 25px;
             font-weight: 400;
             font-size: 22px;
             text-transform: uppercase;
             color: #fff;
         }
-        button {
+        button{
             max-width: 256px;
             width: 100%;
             font-size: 22px;
@@ -131,7 +129,6 @@ body {
 
 
     .lots {
-       
         .f-1 {
             font-weight: 700;
             font-size: 40px;
@@ -141,28 +138,27 @@ body {
             margin-left: 64px;
         }
     }
-    .all_lots {
+    .all_lots{
         display: grid;
-       
         grid-template-columns: 334px 334px 334px;
         align-items: center;
         justify-content: space-between;
-        margin: 0 24px 155px 24px;
+        margin: 0 24px 120px 24px;
     }
 
 
-    .frame-1 {
+    .frame-1{
         background-image: url("../images/card-lot-01.jpg");
         background-size: auto 100%;
         background-position: -120px
     }
-    .frame-2 {
+    .frame-2{
         background-image: url("../images/card-lot-02.jpg");
         background-size: auto 100%;
         background-position: -120px
     }
 
-    .frame-3 {
+    .frame-3{
         background-image: url("../images/card-lot-03.jpg");
         background-size: auto 100%;
         background-position: -120px
@@ -176,7 +172,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        
     }
     .frame:before {
         content: '';
@@ -199,8 +194,6 @@ body {
         text-transform: uppercase;
         position: relative;
         z-index: 2;
-       
-
     }
     .description {
         color: rgb(255, 255, 255);
@@ -210,19 +203,20 @@ body {
         z-index: 2;
     }
 
-    .watch_more {
+    .watch_more{
         font-weight: 400;
         font-size: 20px;
         margin-top: 30px;
         margin-left: 64px;
     }
 
-    .about_auction {
+    .about_auction{
         display: grid;
         grid-template-columns: 334px auto;
-        padding: 0 24px;
+        
+        padding: 35px 24px 0 24px ;
         margin-bottom: 180px;
-        .bg-black {
+        .bg-black{
             background: #000;
             padding: 40px;
             border-radius: 50%;
@@ -231,57 +225,65 @@ body {
             width: 240px;
             height: 240px;
         }
-        .bg-img {
+        .bg-img{
             width: 100%;
             height: 100%;
             margin: auto;
         }
+        .content_auction{
+            padding-top: 100px;
+            
+            .text_about_auction {
+                font-size: 20px;
+                margin-left: 24px;
+            }
 
-        .title_about_auction {
-            font-weight: 700;
-            font-size: 40px;
-            text-transform: uppercase;
-            color: #000;
-            margin: 0 0 90px 24px;
+            .title_about_auction {
+                font-weight: 700;
+                font-size: 40px;
+                text-transform: uppercase;
+                color: #000;
+                margin: 0 0 90px 24px;
+            }
         }
+        
     }
-    footer {
+    footer{
         display: grid;
         grid-template-columns: 400px 200px 400px;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 82px;
-        address {
-            a {
+        address{
+            a{
                 font-style: normal;
             }
-            p {
+            p{
                 font-style: normal;
             }
         }
-        nav {
-            ul {
+        nav{
+            ul{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                li {
+                li{
                     list-style: none;
                     
                 }
-                li:first-child {
+                li:first-child{
                     list-style: none;
-                    a {
+                    a{
                         text-decoration: none;
                     }
                 }    
             }
         }
-        .social {
+        .social{
             display: flex;
             justify-self: end;
             margin-right: 24px;
-
-            img {
+            img{
                 width: 48px;
                 height: 48px;
                 margin-left: 48px;
