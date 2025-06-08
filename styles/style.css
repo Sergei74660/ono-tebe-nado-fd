@@ -157,7 +157,7 @@
     color: #fff;
     max-width: 637px;
     word-spacing: 18.5px;
-    line-height: 28px;
+    
 }
 
 .text_but button {
@@ -181,13 +181,13 @@
     margin-left: 64px;
 }
 
-.all__lots { 
-    display: grid; 
-    grid-template-columns: 334px 334px 334px; 
-    align-items: center; 
-    justify-content: space-between; 
-    margin: 0 24px 120px 24px; 
-} 
+.all__lots {
+    display: grid;
+    grid-template-columns: 334px 334px 334px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 24px 120px 24px;
+}
 
 .all__lots .frame-1 {
     background-image: url("../images/card-lot-01.jpg");
@@ -306,7 +306,7 @@
     
 }
 
-.margin_text{
+.margin_text {
     margin-bottom: 24px;
 }
  
