@@ -4,7 +4,7 @@
     display: grid;
     height: 293px;
     
-    grid-template-columns: 1fr min-content  1fr; 
+    grid-template-columns: 1fr min-content  1fr;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
@@ -69,9 +69,9 @@
 
 .main_block {
     background-image: url("../images/cover.jpg");
-    background-size: cover; 
-    background-position: center; 
-    min-height: 757px; 
+    background-size: cover;
+    background-position: center;
+    min-height: 757px;
     max-width: 100%;
     position: relative;
     z-index: 0;
@@ -214,7 +214,7 @@
 }
 
 .frame {
-    min-height: 596px; 
+    min-height: 596px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
