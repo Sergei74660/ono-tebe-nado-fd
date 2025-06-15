@@ -187,7 +187,7 @@
   background-image: url("../images/card-lot-03.jpg");
 }
 
-.lot-card__ps {
+.lot-card__article {
   position: absolute;
   inset: 0;
   display: flex;
